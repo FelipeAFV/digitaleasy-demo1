@@ -1,0 +1,399 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./navbar.css";
+@import "./carousel.css";
+
+html {
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+
+  overscroll-behavior: unset;
+}
+
+/*
+  TITLE ANIMATION
+*/
+
+
+@keyframes move-left {
+
+  0% {
+
+    position: relative;
+    left: -50px;
+
+    opacity: 0;
+
+  }
+
+  100% {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    
+  }
+  
+}
+.from-left-animation {
+  animation-name: move-left;
+  animation-duration: 1.2s;
+
+}
+
+/**
+
+MAIN PAGE
+
+
+
+*/
+
+.description-animation {
+  visibility: visible;
+  position: relative;
+  animation-duration: 2s;
+  animation-name: move-left;
+}
+
+/**
+  GALERY
+**/
+
+
+
+@keyframes grow-slow {
+
+  0% {
+
+
+    left: 0;
+    top: 0;
+    transform: translateX(0) translateY(0);
+  }
+
+  100% {
+    position: absolute;
+    transform: translateY(-250px) translateX(-280px);
+    left: 50%;
+    top: 50%;
+    width: 500px;
+    height: 500px;
+  }
+
+}
+
+
+@media (min-width: 640px) {
+
+
+  #input-img-0:checked~.lbl-img-0>.img-touched-0 {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-280px) translateY(-250px);
+    top: 50%;
+    width: 500px;
+    height: 500px;
+    animation-name: grow-slow;
+    animation-duration: 1s;
+
+  }
+
+  #input-img-0:checked~.lbl-img-0 {
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 99999999999999;
+    width: 100%;
+    background: #000000cc;
+  }
+
+  #input-img-1:checked~.lbl-img-1>.img-touched-1 {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-280px) translateY(-250px);
+    top: 50%;
+    width: 500px;
+    height: 500px;
+    animation-name: grow-slow;
+    animation-duration: 1s;
+
+  }
+
+  #input-img-1:checked~.lbl-img-1 {
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 99999999999999;
+    width: 100%;
+    background: #000000cc;
+  }
+
+  #input-img-2:checked~.lbl-img-2>.img-touched-2 {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-280px) translateY(-250px);
+    top: 50%;
+    width: 500px;
+    height: 500px;
+    animation-name: grow-slow;
+    animation-duration: 1s;
+
+  }
+
+  #input-img-2:checked~.lbl-img-2 {
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 99999999999999;
+    width: 100%;
+    background: #000000cc;
+  }
+
+  #input-img-3:checked~.lbl-img-3>.img-touched-3 {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-280px) translateY(-250px);
+    top: 50%;
+    width: 500px;
+    height: 500px;
+    animation-name: grow-slow;
+    animation-duration: 1s;
+
+  }
+
+  #input-img-3:checked~.lbl-img-3 {
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 99999999999999;
+    width: 100%;
+    background: #000000cc;
+  }
+
+  #input-img-4:checked~.lbl-img-4>.img-touched-4 {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-280px) translateY(-250px);
+    top: 50%;
+    width: 500px;
+    height: 500px;
+    animation-name: grow-slow;
+    animation-duration: 1s;
+
+  }
+
+  #input-img-4:checked~.lbl-img-4 {
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 99999999999999;
+    width: 100%;
+    background: #000000cc;
+  }
+
+  #input-img-5:checked~.lbl-img-5>.img-touched-5 {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-280px) translateY(-250px);
+    top: 50%;
+    width: 500px;
+    height: 500px;
+    animation-name: grow-slow;
+    animation-duration: 1s;
+
+  }
+
+  #input-img-5:checked~.lbl-img-5 {
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 99999999999999;
+    width: 100%;
+    background: #000000cc;
+  }
+
+  #input-img-6:checked~.lbl-img-6>.img-touched-6 {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-280px) translateY(-250px);
+    top: 50%;
+    width: 500px;
+    height: 500px;
+    animation-name: grow-slow;
+    animation-duration: 1s;
+
+  }
+
+  #input-img-6:checked~.lbl-img-6 {
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 99999999999999;
+    width: 100%;
+    background: #000000cc;
+  }
+
+  #input-img-7:checked~.lbl-img-7>.img-touched-7 {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-280px) translateY(-250px);
+    top: 50%;
+    width: 500px;
+    height: 500px;
+    animation-name: grow-slow;
+    animation-duration: 1s;
+
+  }
+
+  #input-img-7:checked~.lbl-img-7 {
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 99999999999999;
+    width: 100%;
+    background: #000000cc;
+  }
+
+  #input-img-8:checked~.lbl-img-8>.img-touched-8 {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-280px) translateY(-250px);
+    top: 50%;
+    width: 500px;
+    height: 500px;
+    animation-name: grow-slow;
+    animation-duration: 1s;
+
+  }
+
+  #input-img-8:checked~.lbl-img-8 {
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 99999999999999;
+    width: 100%;
+    background: #000000cc;
+  }
+
+  #input-img-9:checked~.lbl-img-9>.img-touched-9 {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-280px) translateY(-250px);
+    top: 50%;
+    width: 500px;
+    height: 500px;
+    animation-name: grow-slow;
+    animation-duration: 1s;
+
+  }
+
+  #input-img-9:checked~.lbl-img-9 {
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 99999999999999;
+    width: 100%;
+    background: #000000cc;
+  }
+}
+
+
+/**
+ ANIMATIONS
+**/
+
+@keyframes grow-hotizontally {
+
+  0% {
+
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+#subline-title {
+
+  animation-name: grow-hotizontally;
+  animation-duration: 2s;
+
+}
+
+
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    background-color: #2d232e;
+  }
+
+  100% {
+    opacity: 1;
+    background-color: #2d232eff;
+  }
+}
+
+@keyframes up-down {
+  0% {
+    position: relative;
+    bottom: 60px;
+  }
+
+  100% {
+    position: relative;
+    bottom: 0px;
+
+  }
+}
+
+.up-down-animation {
+  animation-name: up-down;
+  animation-duration: 2s;
+}
+
+body {
+
+  animation-name: opacity;
+  animation-duration: 2s;
+  margin: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.x-scroll {
+  scroll-snap-type: x mandatory;
+}
+
+.smooth {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+
+}
+
+
+.gradient2 {
+  background: linear-gradient(#3b7ed1, #3b7ed1dd);
+
+}
+
+.gradient {
+  background: linear-gradient(#3b7ed1dd, #3b7ed1);
+}
+
+
+html body #root {
+  height: 100%;
+  min-height: 100vh;
+}
